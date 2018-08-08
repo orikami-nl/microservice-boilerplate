@@ -1,22 +1,22 @@
-# Discription
-The plugin is schedule jobs. It can also do recurring jobs. This service runs on an Lambda by AWS. 
+# Boilerplate microservices
 
-# Setup function
+## Discription
+This is an boilerplate for microservices.
+
+## Setup function
 You need NPM & serverless install on your pc.
 
 1) Run ``npm install`` in the root folder.
-2) Create **.env-staging** and **.env-v1** file
-3) Fill in the values from **.env-example**
 
-# Run locally
-Run ``cross-env --stage=<stage> micro``. You can now call it from **http://localhost:3000**
+Your ready to go!
 
-``--stage=staging`` for example if you want to test the function with the **.env-staging** file
+## Deploy first time
+Run ``serverless deploy [--stage=<stage>]``.
 
-# Deploy
-Run ``serverless deploy --function schedule --stage=<stage>``.
+## Deploy
+Run ``serverless deploy --function hello [--stage=<stage>]``.
 
-# Test 
-Run ``cross-env --stage=staging npm test -- --watchAll``
+## Test 
+Run ``npm run test -- --watchAll``
 
 Developed by *Stijn Albers van der Linden*
