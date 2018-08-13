@@ -1,6 +1,6 @@
 const toLambda = require("@orikami/micro-to-lambda");
 const { postJsonApi } = require("@orikami/fn-to-json-api");
 
-const hello = require("./index");
+const __NAME__ = require("./index");
 
-module.exports.hello = toLambda(postJsonApi(hello));
+module.exports.__NAME__ = toLambda(postJsonApi(__NAME__));

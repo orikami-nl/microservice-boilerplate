@@ -1,5 +1,5 @@
 # The `service` block is the name of the service
-service: hello
+service: __NAME__
 
 # The `provider` block defines where your service will be deployed
 provider:
@@ -16,9 +16,9 @@ provider:
 # The `functions` block defines what code to deploy
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.__NAME__
     events:
       - http:
-          path: hello
+          path: __NAME__
           method: post
           cors: true

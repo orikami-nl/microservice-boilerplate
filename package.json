@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-microservices",
+  "name": "__NAME__",
   "version": "0.0.1",
   "scripts": {
     "start": "cross-env STAGE=staging micro",

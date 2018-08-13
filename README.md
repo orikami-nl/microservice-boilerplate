@@ -1,6 +1,6 @@
-# Boilerplate microservices
+# __NAME__
 
-## Discription
+## Description
 This is an boilerplate for microservices.
 
 ## Setup function
@@ -14,7 +14,7 @@ Your ready to go!
 Run ``serverless deploy [--stage=<stage>]``.
 
 ## Deploy
-Run ``serverless deploy --function hello [--stage=<stage>]``.
+Run ``serverless deploy --function __NAME__ [--stage=<stage>]``.
 
 ## Test 
 Run ``npm run test -- --watchAll``
