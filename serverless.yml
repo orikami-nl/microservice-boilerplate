@@ -15,8 +15,8 @@ provider:
 
 # The `functions` block defines what code to deploy
 functions:
-  hello:
-    handler: handler.__NAME__
+  __NAME__:
+    handler: handler.lambda
     events:
       - http:
           path: __NAME__

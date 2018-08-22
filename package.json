@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "cross-env STAGE=staging micro",
+    "dev": "cross-env STAGE=staging micro-dev",
     "test": "jest"
   },
   "author": "Stijn Albers van der Linden",
@@ -11,14 +12,14 @@
   "devDependencies": {
     "cross-env": "^5.0.5",
     "jest": "^23.1.0",
-    "micro": "^8.0.0",
-    "micro-test-request": "^0.1.1"
+    "micro-dev": "^3.0.0"
   },
   "dependencies": {
     "@orikami/fn-to-json-api": "0.0.1",
     "@orikami/micro-to-lambda": "0.0.1",
     "dotenv": "^5.0.1",
     "jsdom": "^11.11.0",
-    "micro": "^8.0.1"
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.0"
   }
 }
