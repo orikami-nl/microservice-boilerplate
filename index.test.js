@@ -1,8 +1,7 @@
-const __NAME__ = require("./index");
+const fn = require("./index");
 
 test("run __NAME__", async () => {
-  const result = await __NAME__();
+  const result = await fn();
 
-  expect(result.data).toBe("Hello __NAME__");
-  expect(result.version).toBe("v1");
+  expect(result.greeting).toBe("Hello __NAME__");
 });
