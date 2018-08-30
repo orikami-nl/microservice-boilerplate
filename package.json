@@ -2,8 +2,8 @@
   "name": "__NAME__",
   "version": "0.0.1",
   "scripts": {
-    "start": "cross-env STAGE=staging micro",
-    "dev": "cross-env STAGE=staging micro-dev",
+    "start": "cross-env STAGE=staging micro handler.js",
+    "dev": "cross-env STAGE=staging micro-dev handler.js",
     "test": "jest"
   },
   "author": "Stijn Albers van der Linden",
@@ -15,7 +15,8 @@
     "micro-dev": "^3.0.0"
   },
   "dependencies": {
-    "@orikami/fn-to-json-api": "0.0.1",
+    "@orikami/fn-to-json-api": "0.1.0",
+    "@orikami/micro-auth0": "0.1.0",
     "@orikami/micro-to-lambda": "0.0.1",
     "dotenv": "^5.0.1",
     "jsdom": "^11.11.0",

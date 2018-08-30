@@ -1,22 +1,32 @@
 # __NAME__
 
-## Description
-This is an boilerplate for microservices.
+This is the amazing __NAME__ microservice.
 
-## Setup function
-You need NPM & serverless install on your pc.
+## Install
+Required:
+- node > 8 and NPM
+- serverless (`npm install -g serverless`)
 
-1) Run ``npm install`` in the root folder.
+```bash
+npm install
+```
 
-Your ready to go!
-
-## Deploy first time
-Run ``serverless deploy [--stage=<stage>]``.
-
-## Deploy
-Run ``serverless deploy --function __NAME__ [--stage=<stage>]``.
+## Develop
+```bash
+npm run start  # micro will take handler.js and spin up a server
+npm run dev    # development server watches files
+```
 
 ## Test 
-Run ``npm run test -- --watchAll``
+```bash
+npm run test -- --watchAll
+```
 
-Developed by *Stijn Albers van der Linden*
+## Deploy
+```bash
+# first time, deploy entire stack
+serverless deploy --stage=staging
+
+# second time, only update function code
+serverless deploy --function __NAME__ --stage=staging
+```

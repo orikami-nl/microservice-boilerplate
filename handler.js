@@ -1,9 +1,17 @@
 #!/usr/bin/env node
-const { postJsonApi } = require("@orikami/fn-to-json-api");
+const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
+const toJsonApi = require("@orikami/fn-to-json-api");
+const auth0 = require("@orikami/micro-auth0")(require("./auth0"));
 const cors = require("micro-cors")();
+const tryCatch = require("../micro-trycatch");
 const toLambda = require("@orikami/micro-to-lambda");
 
-const handler = cors(postJsonApi(require("./index")));
+const handler = compose(
+  tryCatch,
+  cors,
+  auth0,
+  toJsonApi
+)(require("./index"));
 
 // Default export: the micro function handler
 module.exports = handler;
