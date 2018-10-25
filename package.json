@@ -19,7 +19,7 @@
   "dependencies": {
     "@orikami/fn-to-json-api": "0.1.0",
     "@orikami/micro-auth0": "0.1.0",
-    "@orikami/micro-to-lambda": "0.0.1",
+    "@orikami/micro-to-lambda": "1.2.1",
     "@orikami/micro-trycatch": "0.2.0",
     "dotenv": "^5.0.1",
     "micro-cors": "^0.1.0"
