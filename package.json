@@ -13,8 +13,7 @@
     "cross-env": "^5.0.5",
     "jest": "^23.1.0",
     "micro-dev": "^3.0.0",
-    "jsdom": "^11.11.0",
-    "micro": "^9.3.3"
+    "jsdom": "^11.11.0"
   },
   "dependencies": {
     "@orikami/fn-to-json-api": "0.1.0",
@@ -22,6 +21,7 @@
     "@orikami/micro-to-lambda": "1.2.1",
     "@orikami/micro-trycatch": "0.2.0",
     "dotenv": "^5.0.1",
+    "micro": "^9.3.3",
     "micro-cors": "^0.1.0"
   }
 }
