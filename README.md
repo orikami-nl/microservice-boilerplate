@@ -7,7 +7,8 @@ This is the amazing **NAME** microservice.
 Required:
 
 - node > 8 and NPM
-- serverless (`npm install -g serverless`)
+- kubectl (https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+- ok (`npm install -g git+ssh://git@github.com:orikami-nl/orikami-cli.git`)
 
 ```bash
 npm install
@@ -20,7 +21,7 @@ npm run start  # micro will take handler.js and spin up a server
 npm run dev    # development server watches files
 ```
 
-## Test
+## Test 
 
 ```bash
 npm run test -- --watchAll

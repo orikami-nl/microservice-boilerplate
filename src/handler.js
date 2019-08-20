@@ -1,7 +1,8 @@
 #!/usr/bin/env node
+require("dotenv").config({ path: ".env-" + (process.env.STAGE || "staging") });
 const compose = (...fns) => fns.reduce((f, g) => (...args) => f(g(...args)));
 const toJsonApi = require("@orikami/fn-to-json-api");
-const auth0 = require("@orikami/micro-auth0")(require("./auth0"));
+const auth0 = require("@orikami/micro-auth0")(require(`${process.env.AUTH0_CONFIG}`));
 const tryCatch = require("@orikami/micro-trycatch");
 const cors = require("micro-cors")();
 
